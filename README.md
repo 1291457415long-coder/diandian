@@ -52,12 +52,13 @@ node tests/smoke.js      # 运行冒烟测试
 
 前置：安装 [Android SDK](https://developer.android.com/studio) 与 JDK 17+，并在 `diandian-android/local.properties` 中配置 `sdk.dir`（该文件已被 `.gitignore` 忽略，不入库）。
 
-1. **同步网页到安卓壳**（改了 `diandian-app/` 后必须执行）：
+1. **同步网页到安卓壳**（改了 `diandian-app/` 后必须执行），在 `diandian-android/` 目录运行：
 
    ```bash
-   cp -r diandian-app/index.html diandian-app/css diandian-app/js diandian-app/icons \
-         diandian-app/manifest.webmanifest diandian-app/sw.js \
-         diandian-android/app/src/main/assets/www/
+   # Windows
+   sync-assets.bat
+   # macOS / Linux
+   bash sync-assets.sh
    ```
 
 2. **构建**：

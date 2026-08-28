@@ -2,6 +2,7 @@
 <resources>
     <color name="background_light">#F7FAFC</color>
     <color name="background_dark">#0F172A</color>
+    <color name="ic_launcher_background">#2E9E5B</color>
 
     <style name="Theme.Diandian" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowBackground">@color/background_light</item>

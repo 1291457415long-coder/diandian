@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 中心白色圆点：代表「点点」 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,30a24,24 0 1,0 0.01,0z" />
+    <!-- 下方一小滴，呼应血糖主题 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,62c-7,0 -12,5 -12,12c0,8 12,20 12,20s12,-12 12,-20c0,-7 -5,-12 -12,-12z" />
+</vector>

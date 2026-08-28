@@ -4,8 +4,6 @@ build/
 .idea/
 *.apk
 *.aar
-
-# ===== 本机配置（含 SDK 绝对路径，不传） =====
 local.properties
 
 # ===== 工作区元数据与临时文件 =====
@@ -15,12 +13,13 @@ stitch_extracted/
 cdp_run.js
 cdp_eval.js
 
-# ===== 验证截图（顶层散落 PNG，非源码） =====
-/*.png
-/diandian-android/*.png
+# ===== 二进制图标不入库 =====
+# GitHub MCP 连接器不支持二进制上传；本地工程已含图标，
+# 网页 PWA 图标可用 diandian-app/icons/make_icon.py 重新生成。
+*.png
 
-# ===== 但保留源码内图标 =====
-!diandian-app/icons/
-!diandian-app/icons/**
-!diandian-android/app/src/main/res/
-!diandian-android/app/src/main/res/**
+# ===== 安卓壳内嵌网页副本（由 diandian-app 同步，见 sync-assets） =====
+/diandian-android/app/src/main/assets/www/
+
+# ===== 顶层验证截图（非源码） =====
+/diandian-android/*.png
