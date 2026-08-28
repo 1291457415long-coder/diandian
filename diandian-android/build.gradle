@@ -1,0 +1,4 @@
+// 点点（Diandian）— 顶层构建脚本
+plugins {
+    id 'com.android.application' version '8.13.2' apply false
+}
